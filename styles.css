@@ -1,0 +1,126 @@
+.consent__modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2 );
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  z-index: 1000;
+}
+.consent__modal-overlay-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#customConsentForm {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+#consent-container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.consent__custom--item-text {
+  margin: 0 !important;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.consent__custom--item-label {
+  margin: 0 !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.consent__custom--item-description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.consent__modal {
+  background: #f5f3ee;
+  padding: 20px;
+  width: 100%;
+}
+
+#consentModal {
+  display: none;
+}
+
+.consent__modal-custom {
+  background: #f5f3ee;
+  padding: 20px;
+  width: 400px;
+}
+
+.consent__modal h2 {
+  margin-bottom: 15px;
+}
+.consent__modal-buttons button, .consent__modal-buttons-custom button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffca30;
+}
+
+.consent__modal-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+@media screen and (max-width: 650px) {
+  .consent__modal-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .consent__modal-buttons-custom {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.consent__modal-buttons-custom {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.consent__modal-buttons button:hover, .consent__modal-buttons-custom button:hover {
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}
+
+#customSettings {
+  background-color: #c0c0c0;
+}
+
+#customSettings:hover {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.consent__custom--item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

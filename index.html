@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Consent Mode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="switch.css">
+</head>
+<body>
+
+    <h1>Consent test page</h1>
+    
+    <div id="consent-container">
+
+    <div id="consentModal" class="consent__modal-overlay">
+        <div class="consent__modal">
+            <h2>Setează cookie</h2>
+            <p>Utilizăm cookie-uri pentru a vă oferi cea mai bună experiență posibilă pe site-ul nostru. 
+                Vă rugăm să ne informați dacă sunteți de acord cu utilizarea tuturor acestor cookie-uri.</p>
+            <div class="consent__modal-buttons">
+                <button id="acceptAll">Acceptă tot</button>
+                <button id="rejectAll">Refuză tot</button>
+                <button id="customSettings">Setări personalizate</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div 
+    id="customSettingsModal" 
+    class="consent__modal-overlay-custom" 
+    style="display: none;">
+        <div class="consent__modal-custom">
+            <h2>Setări personalizate</h2>
+            <form id="customConsentForm">
+                <label class="consent__custom--item">
+                    <div class="consent__custom--item-text">
+                        <p class="consent__custom--item-label">Stocare pentru publicitate</p>
+                        <p class="consent__custom--item-description">Acest tip de cookie permite stocarea informațiilor 
+                        despre interacțiunile dvs. cu reclamele, astfel încât să vă putem afișa reclame mai relevante în viitor.</p>
+                    </div>
+                    <label class="consent__switch">
+                        <input type="checkbox" name="ad_storage">
+                        <span class="consent__slider round"></span>
+                    </label>
+                </label>
+                <label class="consent__custom--item">
+                    <div class="consent__custom--item-text">
+                        <p class="consent__custom--item-label">Stocare pentru analitică</p>
+                        <p class="consent__custom--item-description">Aceste cookie-uri ne ajută să înțelegem cum utilizați site-ul nostru,
+                        astfel încât să putem îmbunătăți experiența dvs. În plus, ne permit să analizăm traficul și să monitorizăm performanțele site-ului.</p>
+                    </div>
+                    <label class="consent__switch">
+                        <input type="checkbox" name="analytics_storage">
+                        <span class="consent__slider round"></span>
+                    </label>
+                </label>
+                <label class="consent__custom--item">
+                    <div class="consent__custom--item-text">
+                        <p class="consent__custom--item-label">Personalizarea reclamelor</p>
+                        <p class="consent__custom--item-description">Acest tip de cookie permite personalizarea reclamelor pe care le vedeți 
+                        pe baza preferințelor și activităților dvs. anterioare. Astfel, vă oferim o experiență mai relevantă și mai adaptată.</p>
+                    </div>
+                    <label class="consent__switch">
+                        <input type="checkbox" name="ad_personalization">
+                        <span class="consent__slider round"></span>
+                    </label>
+                </label>
+                <label class="consent__custom--item">
+                    <div class="consent__custom--item-text">
+                        <p class="consent__custom--item-label">Stocarea datelor utilizatorului</p>
+                        <p class="consent__custom--item-description">Aceste cookie-uri stochează informații despre dvs., 
+                        pentru a îmbunătăți experiența dvs. pe site-ul nostru pe parcursul mai multor sesiuni de navigare. 
+                        Acestea includ informații legate de autentificare și preferințe de utilizare.</p>
+                    </div>
+                    <label class="consent__switch">
+                        <input type="checkbox" name="ad_user_data">
+                        <span class="consent__slider round"></span>
+                    </label>
+                </label>
+                
+                <div class="consent__modal-buttons-custom">
+                    <button type="button" id="backToMain">Înapoi</button>
+                    <button type="button" id="saveCustomSettings">Salvează setările</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
